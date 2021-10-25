@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2{
+    position: absolute;
+    top:20%;
+    left: 30%;
+    font-size: 2em;
+    color: #000000;
+}
+section h2 span{
+    color: #000000;
+    animation: anim 2s linear infinite;
+
+}
+@keyframes anim{
+    0%{
+        font-size: 2.5em;
+        color: #000000;
+    }
+    50%{
+        font-size:3.5em;
+        color: #fff;
+    }
+    100%{
+        font-size: 4.5em;
+        color: red;
+    }
+    
+}
+section .note{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 180px;
+    height: 50px;
+    background-color: blue;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+}
+section .note:hover{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.9);
+    background-color: #700B97;
+}
+section .note p{
+    font-size: small;
+    text-align: center;
+    padding-top:10px;
+    color: coral;
+}
+section .note p:hover{
+    color: #fff;
+}
+
+section .note p span{
+    font-weight: 800;
+    color: #fff;
+    animation: blink 3s ease-in-out infinite;
+}
+@keyframes blink{
+    0%{
+        color: coral;
+    }
+    50%{
+        color: #000000;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+section .box{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+}
+section .box p{
+    position: absolute;
+    bottom: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+section img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 1%;
+    left: 1%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+ section .note .teer img{
+    position: absolute;
+    margin-left:-90px;
+    width: 70px;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    
+}
+section .box ul{
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+section .box ul li{
+   position: relative;
+   list-style: none;
+   margin: 5px 0;
+   cursor: pointer;
+}
+section .box ul li .icon{
+   display: inline-block;
+   width: 25px;
+   font-size: 15px;
+   color: #03a9f4;
+   
+}
+section .box ul li span{
+   color: #fff;
+   font-weight: 200;
+   font-size: 1.5ex;
+   padding-right: 10px;
+
+}
+section svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+@media screen and (max-width:992px) {
+    @keyframes anim{
+    0%{
+        font-size: 1.5em;
+        color: #000000;
+    }
+    50%{
+        font-size:2em;
+        color: #fff;
+    }
+    100%{
+        font-size: 2.5em;
+        color: red;
+    }
+    
+}
+section .box{
+    width: 250px;
+    height: 200px;
+}
+section .box p{
+    font-size: 30px;
+    bottom: 30%;
+    text-shadow: 3px 3px 3px #aaa;
+}
+section .box ul li .icon{
+
+    width: 20px;
+    font-size: 13px;
+
+}
+section .box ul li span{
+
+    font-weight: 200;
+    font-size: 1.3ex;
+}
+
+}
+@media screen and (max-width:600px) {
+    @keyframes anim{
+    0%{
+        font-size: .50em;
+        color: #000000;
+    }
+    50%{
+        font-size:1em;
+        color: #fff;
+    }
+    100%{
+        font-size: 1.2em;
+        color: red;
+    }
+    
+}
+section .box{
+     width: 200px;
+     height: 150px;
+    
+}
+section .box p{
+     font-size: 20px;
+     bottom: 40%;
+     text-shadow: 2px 2px 2px #aaa;
+}
+
+section .box ul li .icon{
+     width: 18px;
+     font-size: 12px;
+
+}
+section .box ul li span{
+     font-weight: 200;
+     font-size: 1.1ex;
+    }
+
+}
